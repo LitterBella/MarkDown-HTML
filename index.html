@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://typo.sofi.sh/typo.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+<body>
+	<div id="content">
+
+# 这里面就可以写markdown内容啦
+## 他会自己转成html的哟~
+> 不要相信网上的名人。 ————鲁迅
+
+
+
+
+
+
+		
+	</div>
+  <script>
+		var content = document.getElementById('content');
+		var markdown = content.innerHTML;
+		var html = marked(markdown)
+		content.innerHTML = html;
+  	</script>
+</body>
+</html>
